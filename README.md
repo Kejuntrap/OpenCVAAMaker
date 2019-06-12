@@ -17,4 +17,4 @@ cluster_sizeを適当に設定する。（画像分割したときの１辺の�
 
 ## 動かした例
 
-![/img/show.png]
+![/img/show.png](/img/show.png)
