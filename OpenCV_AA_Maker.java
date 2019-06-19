@@ -18,7 +18,7 @@ public class OpenCV_AA_Maker {
         FileWriter filewriter = new FileWriter(file);
 		BufferedImage original = null;
 		try {
-			original = ImageIO.read(new File("s.jpg"));
+			original = ImageIO.read(new File("Sample.jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -65,11 +65,13 @@ public class OpenCV_AA_Maker {
 						sb.append(sets[Math.min(s,6)]);
 				}
 			}
+			//filewriter.write(sb.toString());
+		}
 			sb.append("\n\r");
+			//System.out.println(sb.toString());
 			filewriter.write(sb.toString());
 		}
 		filewriter.close();
-		}
 	}
 	public static Mat img2Mat(BufferedImage in) {
 		Mat out = new Mat(in.getHeight(), in.getWidth(), CvType.CV_8UC3);
